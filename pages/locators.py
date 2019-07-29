@@ -16,5 +16,13 @@ class LoginPageLocators(object):
     REGISTRATION_PASSWORD2 = (By.CSS_SELECTOR, "#id_registration-password2")
     REGISTRATION_BTN = (By.CSS_SELECTOR, "[name='registration_submit']")
        
+class ProductPageLocators(object):
+    ADD_BTN = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
+    PRICE = (By.CSS_SELECTOR, ".product_main p.price_color")
+    PRICE_AFTER_ADD = (By.XPATH, "//p[contains(text(),'Your basket total')]/strong")
+    SUCCESS_MESSAGE = (By.XPATH, "//div[contains(@class, 'alert-success')]")
     
-    
+class BasePageLocators(object):
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
