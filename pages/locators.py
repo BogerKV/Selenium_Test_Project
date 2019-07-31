@@ -1,7 +1,4 @@
 from selenium.webdriver.common.by import By
-
-#class MainPageLocators(object):
- #   LOGIN_LINK = (By.CSS_SELECTOR, "#registration_link")
     
 class LoginPageLocators(object):
     LOGIN_SUBSTR = "login"
@@ -26,7 +23,8 @@ class BasePageLocators(object):
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_BTN = (By.XPATH, "//a[contains(text(),'View basket')]")
-
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+    
 class CartPageLocators(object):
     BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
     CART_IS_EMPTY_MES = (By.XPATH, "//p[contains(text(),'Your basket is empty')]")
